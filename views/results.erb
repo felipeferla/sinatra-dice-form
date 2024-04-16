@@ -1,11 +1,19 @@
+<html>
+  <head>
+    <title> Dice Form </title>
+    <head>
 
-<a href=https://animated-couscous-5gv94vgq4xgq3pgg-3000.app.github.dev> New attempt </a>
-<h1> <%=@num_dice%>d<%=@num_sides%> </h1>
+      <a href="/"> Go back home </a> | 
+      <a href="/process_roll?dice=<%=@num_dice%>&num_sides=<%=@sides%>"> Roll again </a>
+      
+      <h1> <%=@num_dice%>d<%=@num_sides%> </h1>
 
-<ol>
-  <% @rolls.each do |a_roll|%>
+      <ol>
+        <% @rolls.each do |a_roll|%>
 
-    <li> <%=a_roll%> </li>
+          <li> <em>Result</em>: <%=a_roll%> </li>
 
-  <%end%>
-</ol>
+        <%end%>
+      </ol>
+
+      <html>
